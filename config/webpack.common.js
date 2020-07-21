@@ -1,7 +1,7 @@
 const path = require('path')
 const htmlWebpackPlugin = require('html-webpack-plugin')
 module.exports={
-    context: path.join(process.cwd(),'src','app'),
+    context: path.join(process.cwd(),'src'),
     entry:'./index.ts',
     output: {
         path: path.join(process.cwd(),'dist'),

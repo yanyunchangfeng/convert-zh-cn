@@ -1,15 +1,16 @@
 {
     "compilerOptions": {
-        "baseUrl": "./",
-        "outDir": "./components",
-        "rootDir": "src/app",
+        "baseUrl": "dist",
+        "outDir": "dist",
+        "skipLibCheck": true,
+        "rootDir": "src",
         "lib": ["es2017", "dom"],
         "module": "esnext",
         "moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
         "target": "es5",
-        "sourceMap": true,
+        "sourceMap": false,
         "declaration": true,
-        "noImplicitAny": true,
         "noImplicitReturns": true
     },
     "include": ["src/**/*.ts"]
