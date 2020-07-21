@@ -6,7 +6,7 @@ export {default as pinyin }from './convert-pin-yin';
 // {
 //     var keyword = document.getElementById('keyword');
 //     keyword.addEventListener('blur',()=>{
-//         let  full = (pinyin as any).getFullChars(keyword['value'])
+//         let  full = pinyin.getFullChars(keyword['value'])
 //         let simple = pinyin.getCamelChars(keyword['value'])
 //         console.log(full,simple)
 //         var result = makeWb(keyword['value'])

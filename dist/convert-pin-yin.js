@@ -1,4 +1,10 @@
 var pinyin = (function () {
+    var extend = function (dst, src) {
+        for (var property in src) {
+            dst[property] = src[property];
+        }
+        return dst;
+    };
     var Pinyin = function (ops) {
         Pinyin.fn.initialize(ops);
     }, options = {
@@ -104,12 +110,6 @@ var pinyin = (function () {
             return result;
         }
     };
-    var extend = function (dst, src) {
-        for (var property in src) {
-            dst[property] = src[property];
-        }
-        return dst;
-    };
-    return new Pinyin(arguments);
+    return new Pinyin({});
 })();
 export default pinyin;

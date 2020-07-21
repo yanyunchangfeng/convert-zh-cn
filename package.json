@@ -6,6 +6,7 @@
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
+    "start": "webpack-dev-server --env=dev",
     "build": "tsc -p tsconfig.json"
   },
   "files": ["dist"],
