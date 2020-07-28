@@ -1,7 +1,7 @@
 {
   "name": "convert-zh-cn",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.4",
+  "description": "convert zh-ch ",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -9,19 +9,42 @@
     "start": "webpack-dev-server --env=dev",
     "build": "tsc -p tsconfig.json"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yanyunchangfeng/learning-rxjs.git"
+    "url": "git+https://gitee.com/yanyunchangfeng/convert-zh-ch.git"
   },
   "keywords": [],
-  "author": "yanyunchangfeng <yanyunchangfeng@gmail.com> (https://github.com/yanyunchangfeng)",
+  "author": "yanyunchangfeng <yanyunchangfeng@gmail.com> (https://gitee.com/yanyunchangfeng/convert-zh-ch.git)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yanyunchangfeng/learning-rxjs/issues"
+    "url": "https://gitee.com/yanyunchangfeng/convert-zh-ch.git/issues"
   },
-  "homepage": "https://github.com/yanyunchangfeng/learning-rxjs#readme",
+  "homepage": "https://gitee.com/yanyunchangfeng/convert-zh-ch.git#readme",
   "devDependencies": {
+    "autoprefixer": "9.6.0",
+    "clean-webpack-plugin": "2.0.2",
+    "css-loader": "3.0.0",
+    "file-loader": "4.0.0",
+    "html-loader": "0.5.5",
+    "html-webpack-plugin": "3.2.0",
+    "mini-css-extract-plugin": "0.7.0",
+    "node-sass": "4.12.0",
+    "optimize-css-assets-webpack-plugin": "5.0.1",
+    "postcss-loader": "3.0.0",
+    "sass-loader": "7.1.0",
+    "style-loader": "0.23.1",
+    "svg-url-loader": "3.0.0",
+    "terser-webpack-plugin": "1.3.0",
+    "ts-loader": "6.0.1",
+    "typescript": "3.4.5",
+    "url-loader": "2.0.1",
+    "webpack": "4.32.2",
+    "webpack-cli": "3.3.2",
+    "webpack-dev-server": "3.4.1",
+    "webpack-merge": "4.2.1"
   },
   "publishConfig": {
     "registry": "http://121.41.18.62:8081/repository/npm-hosted"

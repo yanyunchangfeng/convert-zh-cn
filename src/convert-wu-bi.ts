@@ -44,18 +44,36 @@ const  getWubiCode = (ch:any):any =>{
   }
   // 拼音转五笔简码
 function makeWb(str:string){
+    if(!str) return '';
+    let filterStr = str.trim();
+    filterStr = filterStr.replace(/\s/g,'')
+    console.log(filterStr)
     if(typeof(str) != "string")
       throw new Error("函数makePy需要字符串类型参数!");
     var arrResult = new Array(); //保存中间结果的数组
+    var result = ''
     // 处理数字和字母：对数字和字母直接返回
-    for(var i=0,len=str.length;i<len;i++){
+    for(var i=0,len=filterStr.length;i<len;i++){
       // 获得unicode码
-      var ch = str.charAt(i);
+      var ch = filterStr.substr(i,1), unicode = ch.charCodeAt(0);
+      if(unicode > 40869 || unicode < 19968){
+        result += ch;
+      }else{
+        // arrResult.push(getWubiCode(ch)) 
+        // name = mkRslt([getWubiCode(ch)]);
+        //判断是输入的汉字如果是繁体字不进行转换
+        let name = ''
+        if(getWubiCode(ch)){
+          name = mkRslt([getWubiCode(ch)]);
+        }
+        result += name
+      }
       // 检查字库
-      arrResult.push(getWubiCode(ch));
+      // arrResult.push(getWubiCode(ch));
     }
     //console.log(arrResult);console.log(arrResultWubi);
-    return mkRslt(arrResult);
+    // return mkRslt(arrResult);
+    return result
   }
   type result = string| string []
 const  makePy = (str:string)=>{
