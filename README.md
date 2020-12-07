@@ -5,8 +5,8 @@
 
 ## 安装
 
-        npm i convert-zh-cn --save --registry http://121.41.18.62:8081/repository/npm-public/ ( 仓库地址为公司私有npm仓库)
-        yarn add convert-zh-cn --registry http://121.41.18.62:8081/repository/npm-public/ ( 仓库地址为公司私有npm仓库)
+        npm i convert-zh-cn --save 
+        yarn add convert-zh-cn 
 
 ## 使用
 
@@ -27,7 +27,7 @@
             */
 
             // pinyin.getCamelChars('徐') //X 把汉字转换成拼音简码     
-            // pinyin.getFullChars('徐)  //Xu 把汉字转换成拼音全拼  [拼音首字母为大写 如需转换可自行处理]
+            // pinyin.getFullChars('徐)  //XU 把汉字转换成拼音全拼  [拼音首字母为大写 如需转换可自行处理]
 
 、、、
 

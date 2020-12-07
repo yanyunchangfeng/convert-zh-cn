@@ -82,7 +82,7 @@ const  pinyin = (function (){
         var chars = []; //保存中间结果的数组
         for(var i=0,len=filterStr.length; i < len; i++){
           //获得unicode码
-          var ch = filterStr.charAt(i);
+          var ch = filterStr.charAt(i).toUpperCase();
           //检查该unicode码是否在处理范围之内,在则返回该码对映汉字的拼音首字母,不在则调用其它函数处理
           chars.push(this._getChar(ch));
         }

@@ -73,7 +73,7 @@ function makeWb(str) {
     }
     //console.log(arrResult);console.log(arrResultWubi);
     // return mkRslt(arrResult);
-    return result;
+    return result.toLocaleUpperCase();
 }
 var makePy = function (str) {
     if (typeof (str) != "string")

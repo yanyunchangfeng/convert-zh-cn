@@ -1,6 +1,6 @@
 {
   "name": "convert-zh-cn",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "convert zh-ch ",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -47,6 +47,6 @@
     "webpack-merge": "4.2.1"
   },
   "publishConfig": {
-    "registry": "http://121.41.18.62:8081/repository/npm-hosted"
+    "registry": "https://registry.npmjs.org"
   }
 }
